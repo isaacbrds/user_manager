@@ -60,10 +60,9 @@ class UsersController < ApplicationController
       User.import(params[:file])
       ProgressBarJob.set(wait: 1.second).perform_now
       respond_to do |format|
-        format.js { redirect_to users_url, notice: "The file was successfuly imported" }
+        format.html { redirect_to users_url, notice: "The file was successfuly imported" }
         format.json { head :no_content }
       end
-      
     end
   
     private 
