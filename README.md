@@ -18,11 +18,13 @@ This is a project to build a simple manager of users, allowing the admin's users
 - Css 
 - Bootsrap 
 
-# How to execute this project
+# Requirements
+- Docker and docker-compose
+- Ruby on Rails 6.1.4
 
-# Backend
+## Backend
 
-## dependencies
+### dependencies
 -  cable_ready 
 -  cancancan 
 -  devise
@@ -32,17 +34,16 @@ This is a project to build a simple manager of users, allowing the admin's users
 -  roo
 -  shoulda-matchers 
 
-# Frontend
+## Frontend
 
-## dependencies
+### dependencies
 
 - Bootstrap 
 - Popperjs
 - cable_ready 
 
-# Requirements
-- Docker and docker-compose
-- Ruby on Rails 6.1.4
+# How to execute this project
+
 
 ```bash
 # clone repository
