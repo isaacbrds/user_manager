@@ -1,7 +1,5 @@
 <section class="py-5">
 <div class="container px-4 px-lg-5 mt-5">
-  <p id="notice"><%= notice %></p>
-
   <p>
     <strong>Full name:</strong>
     <%= @user.full_name %>
@@ -14,7 +12,7 @@
 
   <p>
     <strong>Avatar: </strong>
-    <%= image_tag @user.avatar if @user.avatar.is_present? %>
+    <%= image_tag @user.avatar if @user.avatar.present? %>
   </p>
   <%= link_to 'Edit', edit_user_path(@user) %> |
   <%= link_to 'Back', users_path %>

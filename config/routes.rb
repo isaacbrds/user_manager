@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
   
   root to: 'dashboard#index'
+  
   get '/admins_list' => 'dashboard#index_admin'
   get '/clients_list' => 'dashboard#index_client'
 end
